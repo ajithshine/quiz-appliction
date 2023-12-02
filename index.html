@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Page</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+<body>
+
+  <div class="container" id="container">
+    <div class="question" id="question1" >
+      <h2>Question 1</h2>
+      <div class="question_box">
+          <div class="left_arrow">right-dontclick</div>
+          <div class="option_box">
+            <div class="hard" onclick="showImage('qhard')">HARD</div>
+            <div class="medium" onclick="showImage('q1medium')">MEDIUM</div>
+            <div class="easy" onclick="showImage('q1easy')">EASY</div>
+          </div>
+          <div class="link right_arrow" onclick="showQuestion(2)">Next Question</div>
+      </div>
+    </div>
+
+    <div class="question" id="question2">
+      <h2>Question 2</h2>
+      <p>This is the content of question 2. <a href="a.html">Go to Another Page</a></p>
+      <div class="link" onclick="showQuestion(1)">Previous Question</div>
+      <div class="link" onclick="showQuestion(3)">Next Question</div>
+    </div>
+
+    <div class="question" id="question2">
+        <h2>Question 3</h2>
+        <p>This is the content of question 2. <a href="a.html">Go to Another Page</a></p>
+        <div class="link" onclick="showQuestion(2)">Previous Question</div>
+        <!-- <div class="link" onclick="showQuestion(3)">Next Question</div> -->
+      </div>
+
+    <!-- Add more questions as needed -->
+
+  </div>
+
+</body>
+</html>
