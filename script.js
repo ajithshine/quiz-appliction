@@ -2,7 +2,7 @@ const container = document.getElementById('container');
 let currentPosition = 0;
 
 imageMapper = [
-    
+    {q1hard,}
 ]
 
 // Retrieve the last question from localStorage
