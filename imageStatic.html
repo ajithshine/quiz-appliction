@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="imageScript.js"></script>
+    <link rel="stylesheet" href="imageStyle.css">
 </head>
 <body>
     <a href="index.html">click to go back</a>
@@ -14,42 +15,15 @@
     <div class="accordion">
         <div class="accordion-item">
           <div class="accordion-header" id="section1" onclick="toggleAccordion('content1')">Section 1</div>
-          <button onclick="toggleAccordionContent('section1')">VIEW</button>
+          <button onclick="toggleAccordionContent('section1')">Question 1</button>
           <div class="accordion-content" id="content1">Content for Section 1</div>
         </div>
         <div class="accordion-item">
-          <div class="accordion-header" onclick="toggleAccordion('content2')">Section 2</div>
-          <button onclick="toggleAccordionContent('section2')">Toggle Content</button>
+          <div class="accordion-header" id="section2" onclick="toggleAccordion('content2')">Section 2</div>
+          <button onclick="toggleAccordionContent('section2')">Question 2</button>
           <div class="accordion-content" id="content2">Content for Section 2</div>
         </div>
         <!-- Add more sections as needed -->
     </div>
 </body>
-<style>
-    #images{
-        height: 30vh;
-        width: 30vw;
-    }
-
-    .accordion {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .accordion-item {
-      border: 1px solid #ddd;
-      margin-bottom: 5px;
-    }
-
-    .accordion-header {
-      background-color: #f1f1f1;
-      padding: 10px;
-      cursor: pointer;
-    }
-
-    .accordion-content {
-      display: none;
-      padding: 10px;
-    }
-</style>
 </html>
