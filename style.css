@@ -21,24 +21,23 @@ body {
   }
 
   .link {
-    margin-top: 20px;
     cursor: pointer;
-    color: blue;
+    color: #000;
   }
 
   .question_box {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
-    border: 2px solid black;
-    width: 60vw;
+    grid-template-columns: 20% 60% 20%;
+    width: 70vw;
   }
-
+  
   .option_box {
     flex-shrink: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .hard,.medium,.easy {
     width: 70%;
@@ -47,27 +46,29 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0.5em 0.5em 0.5em 0.5em;
-    color: #fff;
+    color: #000;
+    font-weight: 500;
     
     border-radius: 3%;
     border: 1px solid #000;
   }
   
   .hard {
-    background-color: red;
+    background-color: rgb(255, 91, 91);
   }
   .medium {
     background-color: yellow;
   }
   .easy {
-    background-color: green;
+    background-color: rgb(108, 255, 108);
   }
 
   .right_arrow, .left_arrow {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10vw;
-    height: 10vw;
-    border: 2px solid black;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    text-decoration: underline;
   }

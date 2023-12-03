@@ -1,10 +1,12 @@
-const container = document.getElementById('container');
-let currentPosition = 0;
-
-// Retrieve the last question from localStorage
-const lastQuestion = localStorage.getItem('lastQuestion');
-if (lastQuestion) {
-    showQuestion(parseInt(lastQuestion));
+window.onload = function() {
+    const container = document.getElementById('container');
+    let currentPosition = 0;
+    
+    // Retrieve the last question from localStorage
+    const lastQuestion = localStorage.getItem('lastQuestion');
+    if (lastQuestion) {
+        showQuestion(parseInt(lastQuestion));
+    }
 }
 
 function showQuestion(questionNumber) {
@@ -17,8 +19,8 @@ function showQuestion(questionNumber) {
 
 function showImage(question, level) {
     let imagePath = imageMappings[question][level];
-    window.location.href = 'imageStatic.html';
     localStorage.setItem('imagePath',imagePath)
+    window.location.href = 'imageStatic.html';
 }
 
 // Handle arrow key presses

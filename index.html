@@ -8,36 +8,58 @@
   <script src="imageScript.js"></script>
 </head>
 <body>
-
   <div class="container" id="container">
     <div class="question" id="question1" >
       <h2>Question 1</h2>
       <div class="question_box">
-          <div class="left_arrow">right-dontclick</div>
+          <div class="left_arrow"></div>
           <div class="option_box">
             <div class="hard" onclick="showImage('question1', 'hard')">HARD</div>
             <div class="medium" onclick="showImage('question1', 'medium')">MEDIUM</div>
             <div class="easy" onclick="showImage('question1', 'easy')">EASY</div>
           </div>
-          <div class="link right_arrow" onclick="showQuestion(2)">Next Question</div>
+          <div class="link right_arrow" onclick="showQuestion(2)">Next --&gt;<br/> Question</div>
       </div>
     </div>
 
-    <div class="question" id="question2">
+    <div class="question" id="question2" >
       <h2>Question 2</h2>
-      <p>This is the content of question 2. <a href="a.html">Go to Another Page</a></p>
-      <div class="link" onclick="showQuestion(1)">Previous Question</div>
-      <div class="link" onclick="showQuestion(3)">Next Question</div>
+      <div class="question_box">
+          <div class="left_arrow" onclick="showQuestion(1)">&lt;-- Previous<br/> Question</div>
+          <div class="option_box">
+            <div class="hard" onclick="showImage('question2', 'hard')">HARD</div>
+            <div class="medium" onclick="showImage('question2', 'medium')">MEDIUM</div>
+            <div class="easy" onclick="showImage('question2', 'easy')">EASY</div>
+          </div>
+          <div class="link right_arrow" onclick="showQuestion(3)">Next --&gt;<br/> Question</div>
+      </div>
     </div>
 
-    <div class="question" id="question2">
-        <h2>Question 3</h2>
-        <p>This is the content of question 2. <a href="a.html">Go to Another Page</a></p>
-        <div class="link" onclick="showQuestion(2)">Previous Question</div>
-        <!-- <div class="link" onclick="showQuestion(3)">Next Question</div> -->
+    <div class="question" id="question3" >
+      <h2>Question 3</h2>
+      <div class="question_box">
+          <div class="left_arrow" onclick="showQuestion(2)">&lt;-- Previous<br/> Question</div>
+          <div class="option_box">
+            <div class="hard" onclick="showImage('question3', 'hard')">HARD</div>
+            <div class="medium" onclick="showImage('question3', 'medium')">MEDIUM</div>
+            <div class="easy" onclick="showImage('question3', 'easy')">EASY</div>
+          </div>
+          <div class="link right_arrow" onclick="showQuestion(4)">Next --&gt;<br/> Question</div>
       </div>
+    </div>
 
-    <!-- Add more questions as needed -->
+    <div class="question" id="question4" >
+      <h2>Question 4</h2>
+      <div class="question_box">
+          <div class="left_arrow" onclick="showQuestion(3)">&lt;-- Previous<br/> Question</div>
+          <div class="option_box">
+            <div class="hard" onclick="showImage('question4', 'hard')">HARD</div>
+            <div class="medium" onclick="showImage('question4', 'medium')">MEDIUM</div>
+            <div class="easy" onclick="showImage('question4', 'easy')">EASY</div>
+          </div>
+          <div class="link right_arrow"></div>
+      </div>
+    </div>
 
   </div>
 

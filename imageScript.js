@@ -1,8 +1,8 @@
 var imageMappings = {
     'question1': {
-      'easy': 'q1hard.jpg',
+      'easy': '',
       'medium': 'question1_medium.jpg',
-      'hard': 'question1_hard.jpg'
+      'hard': './Images/q1hard.jpg'
     },
     'question2': {
       'easy': 'question2_easy.jpg',
@@ -13,7 +13,9 @@ var imageMappings = {
   };
 
 window.onload = function() {
-    imageId = document.getElementById('image');
+    imageId = document.getElementById('images');
     imagePath = localStorage.getItem('imagePath');
-    imageId.src = imagePath;
+    if (imagePath != undefined) {
+      imageId.src = imagePath;
+    }
 }
