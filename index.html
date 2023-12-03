@@ -5,6 +5,7 @@
   <title>Quiz Page</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <script src="imageScript.js"></script>
 </head>
 <body>
 
@@ -14,9 +15,9 @@
       <div class="question_box">
           <div class="left_arrow">right-dontclick</div>
           <div class="option_box">
-            <div class="hard" onclick="showImage('qhard')">HARD</div>
-            <div class="medium" onclick="showImage('q1medium')">MEDIUM</div>
-            <div class="easy" onclick="showImage('q1easy')">EASY</div>
+            <div class="hard" onclick="showImage('question1', 'hard')">HARD</div>
+            <div class="medium" onclick="showImage('question1', 'medium')">MEDIUM</div>
+            <div class="easy" onclick="showImage('question1', 'easy')">EASY</div>
           </div>
           <div class="link right_arrow" onclick="showQuestion(2)">Next Question</div>
       </div>

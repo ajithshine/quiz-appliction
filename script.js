@@ -1,10 +1,6 @@
 const container = document.getElementById('container');
 let currentPosition = 0;
 
-imageMapper = [
-    {q1hard,}
-]
-
 // Retrieve the last question from localStorage
 const lastQuestion = localStorage.getItem('lastQuestion');
 if (lastQuestion) {
@@ -19,8 +15,10 @@ function showQuestion(questionNumber) {
     localStorage.setItem('lastQuestion', questionNumber);
 }
 
-function showImage(label) {
-    window.location.href = label;
+function showImage(question, level) {
+    let imagePath = imageMappings[question][level];
+    window.location.href = 'imageStatic.html';
+    localStorage.setItem('imagePath',imagePath)
 }
 
 // Handle arrow key presses
