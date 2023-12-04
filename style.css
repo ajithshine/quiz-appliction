@@ -19,6 +19,10 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .question h2 a {
+    text-decoration: none;
+    color: #000;
+  }
 
   .link {
     cursor: pointer;
@@ -71,4 +75,53 @@ body {
     height: auto;
     cursor: pointer;
     text-decoration: underline;
+  }
+
+  img {
+    max-width: 100%; /* Ensure image does not exceed its container width */
+    max-height: 300px; /* Set your desired maximum height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline styles that might affect spacing */
+    margin: auto; /* Center the image within its container */
+  }
+  .correct-btn {
+    margin-top: 5vh;
+    background-color: rgb(0, 0, 179);
+  }
+  .correct-btn a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  /*Picture Identify*/
+  #images{
+    height: 30vh;
+    width: 30vw;
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px 10px 0px 10px;
+  }
+
+  .accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+
+  .accordion-header {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 10px;
   }

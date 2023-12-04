@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Page</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js"></script>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="question" id="question1" >
+      <h2>Question 1</h2>
+      <div class="question_box">
+          <div class="left_arrow"></div>
+          <img src="../Images/git.png" alt="Image 1">
+          <div class="link right_arrow" onclick="showQuestion(2)">Next --&gt;<br/> Question</div>
+      </div>
+      <div class="correct-btn" onclick="navigateToQuestions('git')">correct</div>
+    </div>
+
+    <div class="question" id="question2" >
+        <h2>Question 2</h2>
+        <div class="question_box">
+            <div class="left_arrow" onclick="showQuestion(1)">&lt;-- Previous<br/> Question</div>
+            <img src="../Images/jenkins.jpg" alt="Image 1">
+            <div class="link right_arrow" onclick="showQuestion(3)">Next --&gt;<br/> Question</div>
+        </div>
+        <div class="correct-btn"><a href="">correct</a></div>
+      </div>
+  
+      <div class="question" id="question3" >
+        <h2>Question 3</h2>
+        <div class="question_box">
+            <div class="left_arrow" onclick="showQuestion(2)">&lt;-- Previous<br/> Question</div>
+            <img src="../Images/docker.jpg" alt="Image 1">
+            <div class="link right_arrow" onclick="showQuestion(4)">Next --&gt;<br/> Question</div>
+        </div>
+        <div class="correct-btn"><a href="">correct</a></div>
+      </div>
+  
+      <div class="question" id="question4" >
+        <h2>Question 4</h2>
+        <div class="question_box">
+            <div class="left_arrow" onclick="showQuestion(3)">&lt;-- Previous<br/> Question</div>
+            <img src="../Images/jira.jpg" alt="Image 1">
+            <div class="link right_arrow"></div>
+        </div>
+        <div class="correct-btn"><a href="">correct</a></div>
+      </div>
+    
+
+  </div>
+
+</body>
+</html>

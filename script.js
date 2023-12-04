@@ -1,6 +1,6 @@
 window.onload = function() {
     const container = document.getElementById('container');
-    let currentPosition = 0;
+    currentPosition = 0;
     
     // Retrieve the last question from localStorage
     const lastQuestion = localStorage.getItem('lastQuestion');
@@ -31,4 +31,9 @@ document.addEventListener('keydown', (event) => {
     showQuestion(currentPosition / -100 + 2);
     }
 });
+
+function navigateToQuestions(questionId) {
+    localStorage.setItem('questionId', questionId);
+    window.location.href = './accordionQuestions/accordionQuestion.html';
+}
 
